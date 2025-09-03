@@ -1,0 +1,191 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Jain - Portfolio</title>
+    <meta name="description" content="Full-stack developer crafting premium digital experiences with modern technologies and elegant design principles." />
+    <meta name="author" content="Vaibhav Jain" />
+    
+    <meta property="og:title" content="Vaibhav Jain - Premium Portfolio" />
+    <meta property="og:description" content="Full-stack developer crafting premium digital experiences with modern technologies and elegant design principles." />
+    <meta property="og:type" content="website" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-fixed">
+        <div class="nav-container">
+            <div class="nav-content">
+                <span class="nav-logo">Portfolio</span>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content fade-in">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Vaibhav Jain</h1>
+                <p class="hero-description">
+                    Full-stack developer crafting premium digital experiences with modern technologies 
+                    and elegant design principles.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-delay">
+                <div class="image-container">
+                    <img src="data:image/jpeg;base64,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" alt="Vaibhav Jain" class="portrait">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    I’m a passionate full-stack developer who loves building scalable applications 
+                    and elegant user experiences. My focus is on writing clean code, learning 
+                    continuously, and experimenting with modern technologies.
+                </p>
+                
+                <div class="bio-links">
+                    <a href="https://github.com/vaibhavjain0724" class="bio-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-icon">📧</span>
+                        GitHub
+                    </a>
+                    <a href="https://leetcode.com/u/vaibhavjain0724/" class="bio-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-icon">🧩</span>
+                        LeetCode
+                    </a>
+                    <a href="https://www.linkedin.com/in/vaibhav-jain-46a434308" class="bio-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-icon">💼</span>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="card premium-card fade-in">
+                    <h3 class="card-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A selection of my recent work showcasing different technologies and approaches.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="card premium-card fade-in" style="animation-delay: 0s">
+                    <div class="project-header">
+                        <h3 class="project-title">Calorie Tracker App</h3>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <p class="project-description">A clean and fast Calorie Tracker</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <a href="https://calorietrackr-1.onrender.com" target="_blank" class="btn btn-outline mt-3">Live Demo</a>
+                </div>
+
+                <!-- Notes App FIRST -->
+                <div class="card premium-card fade-in" style="animation-delay: 0s">
+                    <div class="project-header">
+                        <h3 class="project-title">Notes App</h3>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <p class="project-description">A secure and fast notes-taking web app with MongoDB backend and JWT authentication.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <a href="https://notes-app-final-pgil.onrender.com" target="_blank" class="btn btn-outline mt-3">Live Demo</a>
+                </div>
+
+                <!-- Chatbot SECOND -->
+                <div class="card premium-card fade-in" style="animation-delay: 0.2s">
+                    <div class="project-header">
+                        <h3 class="project-title">Chatbot</h3>
+                        <span class="project-status">In Progress</span>
+                    </div>
+                    <p class="project-description">An AI-powered chatbot app that integrates APIs for dynamic responses and user interactions.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                    </div>
+                    <a href="https://chatbot-frontend-1hvl.onrender.com/" target="_blank" class="btn btn-outline mt-3">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-center">
+            <div class="fade-in">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="contact-description">
+                    I'm always interested in new opportunities and exciting projects. 
+                    Let's discuss how we can bring your ideas to life.
+                </p>
+                
+                <div class="contact-buttons">
+                    <a href="mailto:vaibhavjain0724@gmail.com" class="btn btn-primary">vaibhavjain0724@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/vaibhav-jain-46a434308" class="btn btn-outline">LinkedIn</a>
+                </div>
+                
+                <div class="footer">
+                    <p class="footer-text">
+                        Vaibhav Jain
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
