@@ -274,10 +274,9 @@ document.addEventListener('DOMContentLoaded', function() {
         type();
     }
     
-    // Uncomment to enable typing effect
-    // const heroTitle = document.querySelector('.hero-title');
-    // if (heroTitle) {
-    //     const originalText = heroTitle.textContent;
-    //     typeWriter(heroTitle, originalText, 100);
-    // }
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        const originalText = heroTitle.textContent;
+        typeWriter(heroTitle, originalText, 100);
+    }
 });
